@@ -1,0 +1,135 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	position: relative;
+	z-index: -2;
+	padding-top: 85px;
+	background: url(https://thumbs.dreamstime.com/b/tile-x-o-noughts-crosses-black-white-vector-pattern-decoration-background-wallpaper-74665107.jpg);
+	background-size: 90px;
+}
+
+p {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+span {
+  font-family: 'Shadows Into Light';
+}
+
+.field {
+  position: relative;
+  background-color: #3b3b3b;
+  border: 1px solid #000;
+  width: 700px;
+  height: 650px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+	background: white;
+	flex: 1 0 25%;
+	height: 32%;
+	margin: 0px 5px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.field .item p {
+  font-size: 200px;
+  font-family: "Comic Sans MS", sans-serif;
+  text-align: center;
+  margin-top: -65px;
+}
+
+.field .hasx p {
+  color: #ffbcbc;
+}
+
+.field .haso p {
+  color: #bce7ff;
+}
+
+/* NEW GAME*/
+.field .newgame {
+  position: absolute;
+  font-family: 'Shadows Into Light';
+  top: 72px;
+  z-index: -1;
+  right: -110px;
+}
+
+.field .newgame a{
+  display: block;
+  color: #fff;
+  background: #3b3b3b;
+  padding: 15px 5px 15px 15px;
+  border-radius: 0 20px 20px 0;
+  font-size: 20px;
+  font-family: Impact;
+  letter-spacing: 6px;
+  text-decoration: none;
+}
+
+.field .newgame a:hover {
+	transform:scale(1.1);
+	box-shadow: 0px 0px 0px 3px rgba(255, 0, 0, 0.5);
+}
+
+.field .newgame a:active {
+  transform: scale(1.07);
+}
+
+/* POINT COUNTER */
+.field .counter {
+  position: absolute;
+  top: -74px;
+  background: #3b3b3b;
+  color: #fff;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  width: 321px;
+  z-index: -1;
+}
+
+.field .counter .o-point,
+.field .counter .x-point {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.field .counter input[type="text"] {
+  width: 91px;
+  font-size: 52px;
+  text-align: center;
+}
+
+
+.field .counter .x-point h3 {
+  font-size: 71px;
+  position: absolute;
+  left: -48px;
+  top: -27px;
+}
+
+.field .counter .o-point h3 {
+  font-size: 71px;
+  position: absolute;
+  right: -48px;
+  top: -29px;
+}
